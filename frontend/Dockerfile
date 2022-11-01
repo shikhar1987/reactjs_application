@@ -1,15 +1,16 @@
 # pull official base image
-FROM node:alpine
+FROM node
 # set working directory
-WORKDIR '/app'
-
+WORKDIR /app
+ENV NODE_OPTIONS=--openssl-legacy-provider
+# ENV REACT_APP_STOCK_ADDRESS=54.252.66.208
 # install app dependencies
-COPY package.json .
-COPY package-lock.json .
-RUN npm install 
-
+COPY package*.json ./
+COPY yarn.lock ./
+RUN yarn install 
+RUN yarn global add dotenv-cli
 # add app
 COPY . .
 
 # start app
-CMD ["npm", "start"]
+CMD ["yarn", "start"]

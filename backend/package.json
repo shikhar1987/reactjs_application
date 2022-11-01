@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node -r @splunk/otel/instrument ./bin/www"
   },
   "dependencies": {
+    "@opentelemetry/instrumentation-http": "^0.33.0",
+    "@splunk/otel": "^2.0.0-rc2",
     "bcrypt": "^5.0.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",

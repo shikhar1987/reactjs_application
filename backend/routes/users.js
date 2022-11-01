@@ -34,9 +34,10 @@ router.post("/register", function (req, res, next) {
     })
     .then(() => {
       res.status(201).json({ success: true, message: "User Created" });
-    }).catch(() => {
-      res.status(500).json({ success: true, message: "Fail" });
-    });
+    })
+//.catch(() => {
+//      res.status(500).json({ success: true, message: "Fail" });
+//    });
 });
 
 router.post("/login", function (req, res, next) {

@@ -13,7 +13,9 @@ const swaggerUi = require("swagger-ui-express");
 const stocksRouter = require("./routes/stocks");
 const usersRouter = require("./routes/users");
 const homeRouter = require("./routes/home");
+//const { diag, DiagConsoleLogger, DiagLogLevel } = require("@opentelemetry/api");
 
+//diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.ALL);
 //const fs = require('fs');
 //const https = require("https");
 // const privateKey = fs.readFileSync('/etc/ssl/private/node-selfsigned.key', 'utf8');
