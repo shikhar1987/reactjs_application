@@ -1,3 +1,4 @@
+import "../splunk-instrumentation.js";
 import "./../main.css";
 import Nav_bar from "./../nav";
 import React, { useState, useEffect } from "react";

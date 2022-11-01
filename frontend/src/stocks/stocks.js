@@ -1,3 +1,4 @@
+import "../splunk-instrumentation.js";
 import React, { useState } from "react";
 import "./../main.css";
 import "bootstrap/dist/css/bootstrap.css";

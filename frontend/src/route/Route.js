@@ -1,3 +1,4 @@
+import "../splunk-instrumentation.js";
 import React from "react";
 import { Router, Switch, Route } from "react-router-dom";
 import App from "../main";

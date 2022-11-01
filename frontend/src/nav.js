@@ -1,3 +1,4 @@
+import "./splunk-instrumentation.js";
 import React, { useState, useEffect } from "react";
 //import logo from './logo.svg';
 import "./main.css";
@@ -65,15 +66,15 @@ export default function Nav_bar() {
           </Nav.Link>
         </Nav>
       ) : (
-          <Nav className="links2">
-            <Nav.Link id="register" onClick={() => history.push("/register")}>
-              Register
+        <Nav className="links2">
+          <Nav.Link id="register" onClick={() => history.push("/register")}>
+            Register
           </Nav.Link>
-            <Nav.Link id="login" onClick={() => history.push("/login")}>
-              Login
+          <Nav.Link id="login" onClick={() => history.push("/login")}>
+            Login
           </Nav.Link>
-          </Nav>
-        )}
+        </Nav>
+      )}
     </Navbar>
   );
 }

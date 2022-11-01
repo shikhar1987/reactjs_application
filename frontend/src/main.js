@@ -1,5 +1,6 @@
 import React from "react";
 //import logo from './logo.svg';
+import "./splunk-instrumentation.js"
 import "./main.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Nav_bar from "./nav";
