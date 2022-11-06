@@ -65,7 +65,7 @@ export default function Quote() {
    * fetch the api through the search label
    */
   const getData = () => {
-    let api_url = `http://${process.env.REACT_APP_STOCK_ADDRESS}:3002/stocks/${localSymbol}`;
+    let api_url = `http://${process.env.REACT_APP_STOCK_ADDRESS}/stocks/${localSymbol}`;
     fetch(api_url)
       .then((res) => res.json())
       .then((res) => ({
@@ -96,7 +96,7 @@ export default function Quote() {
    * the ag grid
    */
   useEffect(() => {
-    let api_url = `http://${process.env.REACT_APP_STOCK_ADDRESS}:3002/stocks/${symbol}`;
+    let api_url = `http://${process.env.REACT_APP_STOCK_ADDRESS}/stocks/${symbol}`;
     fetch(api_url)
       .then((res) => res.json())
       .then((res) => ({

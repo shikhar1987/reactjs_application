@@ -126,7 +126,7 @@ export default function Stocks() {
    */
   const get_industry = (event) => {
     let industry_name = event.target.textContent;
-    let api_url = `http://${process.env.REACT_APP_STOCK_ADDRESS}:3002/stocks/symbols?industry=${industry_name}`;
+    let api_url = `http://${process.env.REACT_APP_STOCK_ADDRESS}/stocks/symbols?industry=${industry_name}`;
     fetch(api_url)
       .then((res) => res.json())
       .then((res) =>
