@@ -25,7 +25,7 @@ jobs:
         run: |
           yarn install
           yarn add dotenv-cli
-          yarn run build --if-present
+          CI=false yarn run build --if-present
           yarn run test --if-present
 
       - name: Upload artifact for deployment job
