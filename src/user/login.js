@@ -16,7 +16,7 @@ export default function Login() {
    * handles action for the login button
    */
   const handleLogin = async () => {
-    const api_url = `http://${process.env.REACT_APP_BACKEND_ADDRESS}:3002/user/login`;
+    const api_url = `http://${process.env.REACT_APP_STOCK_ADDRESS}:3002/user/login`;
     const response = await fetch(api_url, {
       method: "POST",
       headers: {
