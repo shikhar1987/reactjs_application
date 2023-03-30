@@ -11,7 +11,7 @@ export default function Register() {
   const [password, setPassword] = useState("");
 
   const handleRegister = async () => {
-    const api_url = `http://${process.env.REACT_APP_STOCK_ADDRESS}:3002/user/register`;
+    const api_url = `http://${process.env.REACT_APP_USERS_ADDRESS}:3002/user/register`;
     const response = await fetch(api_url, {
       method: "POST",
       headers: {
