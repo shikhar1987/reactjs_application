@@ -64,7 +64,7 @@ export default function Quote() {
    * fetch the api through the search label
    */
   const getData = () => {
-    let api_url = `http://${process.env.REACT_APP_BACKEND_ADDRESS}:3002/stocks/${localSymbol}`;
+    let api_url = `http://${process.env.REACT_APP_STOCK_ADDRESS}:3002/stocks/${localSymbol}`;
     fetch(api_url)
       .then((res) => res.json())
       .then((res) => ({
