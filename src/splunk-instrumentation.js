@@ -1,7 +1,10 @@
 import SplunkOtelWeb from '@splunk/otel-web';
 SplunkOtelWeb.init({
-    beaconUrl: "https://rum-ingest.us1.signalfx.com/v1/rum",
-    rumAuth: "lIcnEUBMgRzeVMoePk_0Mg",
+    beaconUrl: process.env.beaconUrl,
+    rumAuth: process.env.rumAuth,
     app: "stock_app",
-    environment: "johnw_env"
+    environment: "johnw_env",
+    globalAttributes: {
+        'clientId': "123123123123"
+    }
 });
