@@ -24,7 +24,7 @@ jobs:
       - name: yarn install, build, and test
         run: |
           yarn install
-          yarn start
+          yarn run build
           yarn run test
 
       - name: Upload artifact for deployment job
