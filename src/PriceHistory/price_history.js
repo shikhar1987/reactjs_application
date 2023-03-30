@@ -82,7 +82,7 @@ export default function PriceHistory() {
     const end = moment(endDate).format().split("T")[0];
     let token = localStorage.getItem("token");
     const api_url =
-      `http://${process.env.REACT_APP_BACKEND_ADDRESS}:3002/stocks/authed/${symbol}?from=${start}T00%3A00%3A00.000Z&to=${end}T00%3A00%3A00.000Z`;
+      `http://${process.env.REACT_APP_STOCK_ADDRESS}:3002/stocks/authed/${symbol}?from=${start}T00%3A00%3A00.000Z&to=${end}T00%3A00%3A00.000Z`;
     fetch(api_url, {
       headers: {
         accept: "application/json",
